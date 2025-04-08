@@ -5,6 +5,8 @@
       <!-- Информация -->
       <p class="font-semibold text-lg mb-4 before:content-['•'] before:mr-1">Заполнение согласия на участие в
         исследовании.</p>
+        <p class="font-semibold text-lg mb-4 before:content-['•'] before:mr-1">Внимание! Заполнение всех полей является ОБЯЗАТЕЛЬНЫМ!</p>
+
       <p class="font-semibold text-lg mb-4 before:content-['•'] before:mr-1">Анкетирование.</p>
     </div>
     <!-- Таблица с данными пользователя -->
@@ -1504,9 +1506,9 @@
   </div>
   <!-- Кнопка отправки -->
   <div class="flex justify-center mt-6">
-    <button @click="submitForm" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md 
-               hover:bg-blue-600 hover:shadow-lg 
-               active:bg-blue-700 active:scale-95 
+    <button @click="submitForm" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md
+               hover:bg-blue-600 hover:shadow-lg
+               active:bg-blue-700 active:scale-95
                transition-all duration-200 ease-in-out">
       Отправить данные
     </button>
