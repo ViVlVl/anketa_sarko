@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AnswerRequest;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Patient;
 use App\Models\Question;
 use App\Models\Answer;
 use App\Models\AnswerOption;
+
 
 class ArticleController extends Controller
 {
@@ -16,8 +18,9 @@ class ArticleController extends Controller
         return Inertia::render('Articles/Index');
     }
 
-    public function submit(Request $request)
+    public function submit(AnswerRequest $request)
     {
+
         $patient = Patient::create([
             'ФИО' => $request->input('personal_info.fio'),
             'Дата рождения' => $request->input('personal_info.dbirth'),
