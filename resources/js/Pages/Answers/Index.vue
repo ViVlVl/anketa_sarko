@@ -173,7 +173,7 @@ span.answer {
     font-size: 22px;
     /* Чуть больше размера */
     font-weight: bold;
-    color: #d32f2f;https://gitlab.com/nde178/anketa
+    color: #d32f2f;
     /* Бордовый цвет */
     text-decoration: underline;
     /* Подчеркивание */
