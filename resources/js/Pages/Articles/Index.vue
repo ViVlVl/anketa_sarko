@@ -17,7 +17,7 @@
         <!-- Таблица с данными пользователя -->
         <div class="grid grid-cols-4 gap-4 mb-4 ml-20">
             <div class="border border-gray-400 p-4 bg-blue-100">
-                <p>Пациент №</p>
+                <!-- <p>Пациент №</p> -->
                 <p>(лица старше 45 лет)</p>
 
                 <div class="grid grid-cols-[65px_1fr] items-center gap-2 mt-2">
@@ -390,7 +390,7 @@
             </div>
         </div>
     </div>
-    <div class="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
+    <div class="max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
         <h1 class="text-3xl font-semibold text-center text-gray-800 mb-8">
             Опросник Сарко-скрин
         </h1>
@@ -414,13 +414,14 @@
             <p class="font-semibold mb-2">Важная информация:</p>
             <p>
                 Пожалуйста, не спешите и отвечайте на вопросы внимательно, чтобы
-                мы могли предоставить наиболее точные рекомендации.
+                мы могли предоставить наиболее точные рекомендации.<br>
+                Требуется ответить на все вопросы.
             </p>
         </div>
     </div>
     <div class="p-6">
         <!-- Вопрос 1 -->
-        <div class="space-y-4">
+            <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4">
             <p class="font-semibold text-lg mb-4">
                 1. Чувствуете ли Вы в настоящее время, что у Вас есть снижение:
             </p>
@@ -468,7 +469,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 2 -->
             <p class="font-semibold text-lg mb-4">
                 2. Ощущаете ли Вы боль в мышцах?
@@ -525,7 +526,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 3 -->
             <p class="font-semibold text-lg mb-4">
                 3. При легкой физической нагрузке (медленно ходить, гладить
@@ -725,7 +726,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mp-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mp-4">
             <!-- Вопрос 4 -->
             <p class="font-semibold text-lg mb-4">
                 4. При умеренной физической нагрузке (быстро ходить, мыть окна,
@@ -924,7 +925,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 5 -->
             <p class="font-semibold text-lg mb-4">
                 5. При интенсивной физической нагрузке (бег, поход на экскурсию,
@@ -1108,7 +1109,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 6 -->
             <p class="font-semibold text-lg mb-4">
                 6. Чувствуете ли Вы себя старым (старой)?
@@ -1161,7 +1162,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 7 -->
             <p class="font-semibold text-lg mb-4">
                 7. Если в вопросе 6 Вы ответили «Да», что заставило Вас так
@@ -1261,7 +1262,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 8 -->
             <p class="font-semibold text-lg mb-4">
                 8. Чувствуете ли Вы себя физически слабым (слабой)?
@@ -1314,7 +1315,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 9 -->
             <p class="font-semibold text-lg mb-4">
                 9. Чувствуете ли Вы ограничения в следующем:
@@ -1443,7 +1444,7 @@
                         type="radio"
                         v-model="vopros9['Продолжительность']"
                         name="restrictions-Продолжительность"
-                        value="Незначительные"
+                        vmax-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg alue="Незначительные"
                     />
                 </div>
                 <div class="text-center row-start-3 col-start-4">
@@ -1526,7 +1527,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 10 -->
             <p class="font-semibold text-lg mb-4">10. При ходьбе:</p>
             <!-- Таблица -->
@@ -1794,7 +1795,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 11 -->
             <p class="font-semibold text-lg mb-4">
                 11. Сложно ли Вам удержать равновесие
@@ -1851,7 +1852,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 12 -->
             <p class="font-semibold text-lg mb-4">12. Как часто Вы падаете?</p>
             <div class="grid grid-cols-4 gap-2 mb-4 ml-20">
@@ -1906,7 +1907,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4">
             <!-- Вопрос 13 -->
             <p class="font-semibold text-lg mb-4">
                 13. Как Вы думаете, изменилась ли Ваша внешность?
@@ -1963,7 +1964,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 14 -->
             <p class="font-semibold text-lg mb-4">
                 14. Если на вопрос 13 Вы ответили «Да», то в чем это
@@ -2052,7 +2053,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 15 -->
             <p class="font-semibold text-lg mb-4">
                 15. Если на вопрос 13 Вы ответили «Да», расстроены ли Вы этими
@@ -2108,7 +2109,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 16 -->
             <p class="font-semibold text-lg mb-4">
                 16. Чувствуете ли Вы себя немощным?
@@ -2150,7 +2151,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <p class="font-semibold text-lg mb-4">
                 17. Испытываете ли Вы в настоящее время затруднения при
                 выполнении следующих действий:
@@ -2776,7 +2777,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 18-->
             <p class="font-semibold text-lg mb-4">
                 18. Ограничивает ли слабость в мышцах Ваши движения?
@@ -2833,7 +2834,7 @@
             </div>
         </div>
 
-        <div class="space-y-4 mt-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4 mt-4">
             <!-- Вопрос 19 -->
             <p class="font-semibold text-lg mb-4">
                 19. Если на вопрос 18 вы ответили «Да», то назовите причины
@@ -2901,7 +2902,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4">
             <!-- Вопрос 20-->
             <p class="font-semibold text-lg mb-4">
                 20. Ограничивает ли мышечная слабость Вашу сексуальную
@@ -2966,7 +2967,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4">
             <!-- Вопрос 21-->
             <p class="font-semibold text-lg mb-4">
                 21. Как изменилось выполнение Вами физических упражнений /
@@ -3021,7 +3022,7 @@
             </div>
         </div>
 
-        <div class="space-y-4">
+        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4">
             <!-- Вопрос 22 -->
             <p class="font-semibold text-lg mb-4">
                 22. Как изменился Ваш досуг (поход в гости, садоводство, мелкий
