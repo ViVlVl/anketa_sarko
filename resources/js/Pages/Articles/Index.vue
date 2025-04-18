@@ -1,24 +1,17 @@
 <template>
-    <div class="p-6">
-        <!-- Личные данные-->
-        <div class="space-y-4">
-            <!-- Информация -->
-            <p
-                class="font-semibold text-lg mb-4 before:content-['•'] before:mr-1"
-            >
-                Заполнение согласия на участие в исследовании.
-            </p>
-            <p
-                class="font-semibold text-lg mb-4 before:content-['•'] before:mr-1"
-            >
-                Анкетирование.
-            </p>
-        </div>
-        <!-- Таблица с данными пользователя -->
-        <div class="grid grid-cols-4 gap-4 mb-4 ml-20">
-            <div class="border border-gray-400 p-4 bg-blue-100">
-                <!-- <p>Пациент №</p> -->
-                <p>(лица старше 45 лет)</p>
+  <div class="p-6">
+    <!-- Личные данные-->
+    <div class="space-y-4">
+      <!-- Информация -->
+      <p class="font-semibold text-lg mb-4 before:content-['•'] before:mr-1">Заполнение согласия на участие в
+        исследовании.</p>
+      <p class="font-semibold text-lg mb-4 before:content-['•'] before:mr-1">Анкетирование.</p>
+    </div>
+    <!-- Таблица с данными пользователя -->
+    <div class="grid grid-cols-4 gap-4 mb-4 ml-20">
+      <div class="border border-gray-400 p-4 bg-blue-100">
+        <p>Пациент №</p>
+        <p>(лица старше 45 лет)</p>
 
                 <div class="grid grid-cols-[65px_1fr] items-center gap-2 mt-2">
                     <label
@@ -3022,81 +3015,55 @@
             </div>
         </div>
 
-        <div class="max-w-5xl mx-auto p-6 bg-gray shadow-lg rounded-lg space-y-4">
-            <!-- Вопрос 22 -->
-            <p class="font-semibold text-lg mb-4">
-                22. Как изменился Ваш досуг (поход в гости, садоводство, мелкий
-                ремонт по дому – починить кран, подклеить обои, творчество,
-                охота/рыбалка, общение по интересам, игры в карты, прогулки и т.
-                д.)?
-            </p>
-            <div class="grid grid-cols-5 grid-rows-1 gap-2 mb-4 ml-20">
-                <div class="flex justify-center items-center space-x-2">
-                    <input
-                        type="radio"
-                        id="doseg-0"
-                        value="Увеличилось"
-                        v-model="vopros22"
-                    />
-                    <label for="doseg-0" class="text-lm text-gray-700"
-                        >Увеличилось</label
-                    >
-                </div>
-                <div class="flex justify-center items-center space-x-2">
-                    <input
-                        type="radio"
-                        id="doseg-1"
-                        value="Снизилось"
-                        v-model="vopros22"
-                    />
-                    <label for="doseg-1" class="text-lm text-gray-700"
-                        >Снизилось</label
-                    >
-                </div>
-                <div class="flex justify-center items-center space-x-2">
-                    <input
-                        type="radio"
-                        id="doseg-2"
-                        value="Не изменилось"
-                        v-model="vopros22"
-                    />
-                    <label for="doseg-2" class="text-lm text-gray-700"
-                        >Не изменилось</label
-                    >
-                </div>
-                <div class="flex justify-center items-center space-x-2">
-                    <input
-                        type="radio"
-                        id="doseg-3"
-                        value="Я никогда не занимался (не занималась) активным досугом"
-                        v-model="vopros22"
-                    />
-                    <label for="doseg-3" class="text-lm text-gray-700"
-                        >Я никогда не занимался (не занималась) активным
-                        досугом</label
-                    >
-                </div>
-            </div>
+    <div class="space-y-4">
+      <!-- Вопрос 22 -->
+      <p class="font-semibold text-lg mb-4">22. Как изменился Ваш досуг (поход в гости, садоводство, мелкий ремонт по
+        дому –
+        починить кран, подклеить обои, творчество, охота/рыбалка, общение по интересам, игры в карты, прогулки и т. д.)?
+      </p>
+      <div class="grid grid-cols-5 grid-rows-1 gap-2 mb-4 ml-20">
+        <div class="flex justify-center items-center space-x-2">
+          <input type="radio" id="doseg-0" value="Увеличилось" v-model="vopros22">
+          <label for="doseg-0" class="text-lm text-gray-700">Увеличилось</label>
         </div>
-    </div>
-    <!-- Кнопка отправки -->
-    <div class="flex justify-center mt-6">
-        <button
-            @click="submitForm"
-            class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg active:bg-blue-700 active:scale-95 transition-all duration-200 ease-in-out"
-        >
-            Отправить данные
-        </button>
-    </div>
-    <div>
-        <!-- Модалка (всплывающее окно) -->
-        <div v-if="showModal" class="modal-overlay">
-            <div class="modal-content">
-                <p>{{ modalMessage }}</p>
-                <p>Ваши баллы: {{ totalPoints }}</p>
-            </div>
+        <div class="flex justify-center items-center space-x-2">
+          <input type="radio" id="doseg-1" value="Снизилось" v-model="vopros22">
+          <label for="doseg-1" class="text-lm text-gray-700">Снизилось</label>
         </div>
+        <div class="flex justify-center items-center space-x-2">
+          <input type="radio" id="doseg-2" value="Не изменилось" v-model="vopros22">
+          <label for="doseg-2" class="text-lm text-gray-700">Не изменилось</label>
+        </div>
+        <div class="flex justify-center items-center space-x-2">
+          <input type="radio" id="doseg-3" value="Я никогда не занимался (не занималась) активным досугом"
+            v-model="vopros22">
+          <label for="doseg-3" class="text-lm text-gray-700">Я никогда не занимался (не занималась) активным
+            досугом</label>
+        </div>
+      </div>
     </div>
+
+  </div>
+  <!-- Кнопка отправки -->
+  <div class="flex justify-center mt-6">
+    <button @click="submitForm" class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md
+               hover:bg-blue-600 hover:shadow-lg
+               active:bg-blue-700 active:scale-95
+               transition-all duration-200 ease-in-out">
+      Отправить данные
+    </button>
+  </div>
+  <div>
+    <!-- Модалка (всплывающее окно) -->
+    <div v-if="showModal" class="modal-overlay">
+      <div class="modal-content">
+        <p>{{ modalMessage }}</p>
+        <p>Ваши баллы: {{ totalPoints }}</p>
+      </div>
+    </div>
+  </div>
+
+
 </template>
 
 <script>
